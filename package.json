@@ -10,7 +10,12 @@
     "test": "jest --passWithNoTests",
     "format": "prettier --write .",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
-    "lint": "eslint --ext js,jsx,ts,tsx --fix"
+    "lint": "eslint --ext js,jsx,ts,tsx --fix",
+    "husky": {
+      "hooks": {
+        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      }
+    }
   },
   "dependencies": {
     "@emotion/react": "^11.4.0",

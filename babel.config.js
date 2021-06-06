@@ -7,7 +7,6 @@ module.exports = {
     plugins: [
         ['@emotion'],
         ["inline-react-svg"],
-        ["react-html-attrs"],
         [
             'babel-plugin-import',
             {
